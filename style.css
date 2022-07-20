@@ -1,0 +1,154 @@
+:root
+{
+    --blue:#1e1fcd;
+    --white:#ffffff;
+    --faintblue:#756bf2;
+    --grey:#f1f2fb;
+    --faintbutton:#d3d4f4;
+
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins','Roboto',sans-serif;
+    transition: all 0.25s ease;
+}
+
+.background
+{
+    height: 100vh;
+    width: 100%;
+    background-image: url("pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main_wra
+{
+    width: 400px;
+    height: 600px;
+    border-radius: 20px;
+    padding: 1.0rem;
+}
+.card
+{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.main_img
+{
+    width: 100%;
+    height: 32%;
+    background-image: url("illustration-hero.svg");
+    border-radius: 20px 20px 0 0;
+    background-size: cover;
+}
+h2
+{
+    font-weight:800;
+    font-size: 1.5rem;
+    text-shadow: 0.1px 0px 0.8px grey;
+}
+.main_content
+{
+    height: 68%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+    justify-content: space-between;
+}
+.main_content span
+{
+   font-size: 0.85rem;
+   color: grey;
+   transform: translateY(-1rem);
+   font-weight: 400;
+} 
+
+.annual_plan
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--grey);
+    padding: 0.8rem;
+    border-radius: 10px;
+}
+.annual_plan img
+{
+    width: 2.5rem;
+}
+.annual_plan-content
+{
+    transform: translateX(-2rem);
+    font-size: 0.8rem;
+}
+
+.annual_plan a
+{
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--blue);
+}
+.annual_plan a:hover
+{
+    text-decoration: none;
+    color:var(--faintblue);
+}
+button
+{
+    border: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+   
+}
+
+#payment_btn
+{
+    width: 100%;
+    height: 45px;
+    border-radius: 12px;
+    background: var(--blue);
+    color: var(--white);
+    font-weight: 800;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+    
+}
+#payment_btn:hover
+{
+    background: var(--faintblue);
+}
+
+#cancel_btn
+{
+    background: none;
+    color: grey;
+    font-weight: 800;
+}
+#cancel_btn:hover
+{
+    color: black;
+}
+
+
+@media (min-width:800px) and (max-width:1000px)
+{
+    .main_wra
+    {
+        width: 600px;
+        height: 900px;
+    }
+
+}
